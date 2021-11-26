@@ -25,8 +25,7 @@ void counting_sort(int*, int*, int, int, int); //прототип функции
 
 void counting_sort(int given_array[], int sorted_array[], int size, int max, int min)
 {
-    int length = max - min;
-    int* counting_array = (int*)calloc((length + 1), sizeof(int));
+   
     int k = 0;
 
 

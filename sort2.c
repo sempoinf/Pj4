@@ -70,7 +70,7 @@ int* arr_gen(int n) {
 
 int main() {
 
-    int size, i;
+    int size, i,length;
     int min = 100001;
     int max = -1;
     scanf("%d", &size);
@@ -83,8 +83,9 @@ int main() {
         else if (max < array[i]) { max = array[i]; }
 
     }
+    length = max-min;
     int* arr1;
-    arr1 = (int*)malloc(max * sizeof(int));
+    arr1 = (int*)malloc(length * sizeof(int));
     for (i = 0; i < max; i++)
         arr1[i] = 0;
 
